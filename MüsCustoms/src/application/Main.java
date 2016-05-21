@@ -13,7 +13,7 @@ public class Main extends Application {
 		try {
 			AnchorPane root = FXMLLoader.load(getClass().getResource("MainOrderScreen.fxml"));
 			Scene scene = new Scene(root,400,400);
-			primaryStage.setTitle("Order your custom MÜSLI");
+			primaryStage.setTitle("Order your custom MÜSLIII");
 			primaryStage.setScene(scene);
 			primaryStage.show();
 		} catch(Exception e) {
