@@ -7,15 +7,21 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 
 
-public class Main extends Application {
+public class MainApp extends Application {
+	
+	
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			AnchorPane root = FXMLLoader.load(getClass().getResource("MainOrderScreen.fxml"));
-			Scene scene = new Scene(root,400,400);
-			primaryStage.setTitle("Order your custom MÜSLIII");
+			final FXMLLoader guiLoader = new FXMLLoader(getClass().getResource("LoginScreen.fxml"));
+			AnchorPane root = guiLoader.load();
+			Scene scene = new Scene(root,520,500);
+			primaryStage.setTitle("Order your custom MÜSLI");
 			primaryStage.setScene(scene);
 			primaryStage.show();
+			LoginController controller = (LoginController)guiLoader.getController();
+			controller.start();
+			
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
