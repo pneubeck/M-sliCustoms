@@ -1,0 +1,182 @@
+
+**** Error file opened at 20160523 182743 Central European Summer Time Rel 3.0.2 (2009-03-29) [720.713]
+Error:  >Mon May 23 18:27:43,589<    
+RfcException: [null]
+    message: 'ashost' is missing
+    Return code: RFC_INVALID_PARAMETER(19)
+    error group: 101
+    key: RFC_ERROR_PROGRAM
+	at com.sap.conn.rfc.api.RfcOptions.checkParameters(RfcOptions.java:194)
+	at com.sap.conn.rfc.api.RfcApi.RfcOpen(RfcApi.java:75)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcClient.connect(MiddlewareJavaRfc.java:1273)
+	at com.sap.conn.jco.rt.ClientConnection.connect(ClientConnection.java:661)
+	at com.sap.conn.jco.rt.PoolingFactory.init(PoolingFactory.java:103)
+	at com.sap.conn.jco.rt.ConnectionManager.createFactory(ConnectionManager.java:171)
+	at com.sap.conn.jco.rt.DefaultConnectionManager.createFactory(DefaultConnectionManager.java:44)
+	at com.sap.conn.jco.rt.ConnectionManager.getFactory(ConnectionManager.java:160)
+	at com.sap.conn.jco.rt.RfcDestination.initialize(RfcDestination.java:789)
+	at com.sap.conn.jco.rt.RfcDestination.getAttributes(RfcDestination.java:637)
+	at com.sap.conn.jco.rt.RfcDestination.getAttributes(RfcDestination.java:26)
+	at application.ConnectionManager.step1Connect(ConnectionManager.java:74)
+	at application.ConnectionManager.main(ConnectionManager.java:303)
+
+
+**** Error file opened at 20160523 183341 Central European Summer Time Rel 3.0.2 (2009-03-29) [720.713]
+Error:  >Mon May 23 18:33:41,520<    
+RfcException: [null]
+    message: 'ashost' is missing
+    Return code: RFC_INVALID_PARAMETER(19)
+    error group: 101
+    key: RFC_ERROR_PROGRAM
+	at com.sap.conn.rfc.api.RfcOptions.checkParameters(RfcOptions.java:194)
+	at com.sap.conn.rfc.api.RfcApi.RfcOpen(RfcApi.java:75)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcClient.connect(MiddlewareJavaRfc.java:1273)
+	at com.sap.conn.jco.rt.ClientConnection.connect(ClientConnection.java:661)
+	at com.sap.conn.jco.rt.PoolingFactory.init(PoolingFactory.java:103)
+	at com.sap.conn.jco.rt.ConnectionManager.createFactory(ConnectionManager.java:171)
+	at com.sap.conn.jco.rt.DefaultConnectionManager.createFactory(DefaultConnectionManager.java:44)
+	at com.sap.conn.jco.rt.ConnectionManager.getFactory(ConnectionManager.java:160)
+	at com.sap.conn.jco.rt.RfcDestination.initialize(RfcDestination.java:789)
+	at com.sap.conn.jco.rt.RfcDestination.getAttributes(RfcDestination.java:637)
+	at com.sap.conn.jco.rt.RfcDestination.getAttributes(RfcDestination.java:26)
+	at application.ConnectionManager.step1Connect(ConnectionManager.java:74)
+	at application.ConnectionManager.main(ConnectionManager.java:303)
+
+
+**** Error file opened at 20160523 183432 Central European Summer Time Rel 3.0.2 (2009-03-29) [720.713]
+Error:  >Mon May 23 18:34:32,387<    
+RfcException: [null]
+    message: 'ashost' is missing
+    Return code: RFC_INVALID_PARAMETER(19)
+    error group: 101
+    key: RFC_ERROR_PROGRAM
+	at com.sap.conn.rfc.api.RfcOptions.checkParameters(RfcOptions.java:194)
+	at com.sap.conn.rfc.api.RfcApi.RfcOpen(RfcApi.java:75)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcClient.connect(MiddlewareJavaRfc.java:1273)
+	at com.sap.conn.jco.rt.ClientConnection.connect(ClientConnection.java:661)
+	at com.sap.conn.jco.rt.PoolingFactory.init(PoolingFactory.java:103)
+	at com.sap.conn.jco.rt.ConnectionManager.createFactory(ConnectionManager.java:171)
+	at com.sap.conn.jco.rt.DefaultConnectionManager.createFactory(DefaultConnectionManager.java:44)
+	at com.sap.conn.jco.rt.ConnectionManager.getFactory(ConnectionManager.java:160)
+	at com.sap.conn.jco.rt.RfcDestination.initialize(RfcDestination.java:789)
+	at com.sap.conn.jco.rt.RfcDestination.getAttributes(RfcDestination.java:637)
+	at com.sap.conn.jco.rt.RfcDestination.getAttributes(RfcDestination.java:26)
+	at application.ConnectionManager.step1Connect(ConnectionManager.java:74)
+	at application.ConnectionManager.main(ConnectionManager.java:303)
+
+
+**** Error file opened at 20160523 184415 Central European Summer Time Rel 3.0.2 (2009-03-29) [720.713]
+Error:  >Mon May 23 18:44:15,132<    
+RfcException: [null]
+    message: 'ashost' is missing
+    Return code: RFC_INVALID_PARAMETER(19)
+    error group: 101
+    key: RFC_ERROR_PROGRAM
+	at com.sap.conn.rfc.api.RfcOptions.checkParameters(RfcOptions.java:194)
+	at com.sap.conn.rfc.api.RfcApi.RfcOpen(RfcApi.java:75)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcClient.connect(MiddlewareJavaRfc.java:1273)
+	at com.sap.conn.jco.rt.ClientConnection.connect(ClientConnection.java:661)
+	at com.sap.conn.jco.rt.PoolingFactory.init(PoolingFactory.java:103)
+	at com.sap.conn.jco.rt.ConnectionManager.createFactory(ConnectionManager.java:171)
+	at com.sap.conn.jco.rt.DefaultConnectionManager.createFactory(DefaultConnectionManager.java:44)
+	at com.sap.conn.jco.rt.ConnectionManager.getFactory(ConnectionManager.java:160)
+	at com.sap.conn.jco.rt.RfcDestination.initialize(RfcDestination.java:789)
+	at com.sap.conn.jco.rt.RfcDestination.getAttributes(RfcDestination.java:637)
+	at com.sap.conn.jco.rt.RfcDestination.getAttributes(RfcDestination.java:26)
+	at application.ConnectionManager.step1Connect(ConnectionManager.java:74)
+	at application.ConnectionManager.main(ConnectionManager.java:303)
+
+
+**** Error file opened at 20160523 184653 Central European Summer Time Rel 3.0.2 (2009-03-29) [720.713]
+Error:  >Mon May 23 18:46:53,330<    
+RfcException: [null]
+    message: 'ashost' is missing
+    Return code: RFC_INVALID_PARAMETER(19)
+    error group: 101
+    key: RFC_ERROR_PROGRAM
+	at com.sap.conn.rfc.api.RfcOptions.checkParameters(RfcOptions.java:194)
+	at com.sap.conn.rfc.api.RfcApi.RfcOpen(RfcApi.java:75)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcClient.connect(MiddlewareJavaRfc.java:1273)
+	at com.sap.conn.jco.rt.ClientConnection.connect(ClientConnection.java:661)
+	at com.sap.conn.jco.rt.PoolingFactory.init(PoolingFactory.java:103)
+	at com.sap.conn.jco.rt.ConnectionManager.createFactory(ConnectionManager.java:171)
+	at com.sap.conn.jco.rt.DefaultConnectionManager.createFactory(DefaultConnectionManager.java:44)
+	at com.sap.conn.jco.rt.ConnectionManager.getFactory(ConnectionManager.java:160)
+	at com.sap.conn.jco.rt.RfcDestination.initialize(RfcDestination.java:789)
+	at com.sap.conn.jco.rt.RfcDestination.getAttributes(RfcDestination.java:637)
+	at com.sap.conn.jco.rt.RfcDestination.getAttributes(RfcDestination.java:26)
+	at application.ConnectionManager.step1Connect(ConnectionManager.java:75)
+	at application.ConnectionManager.main(ConnectionManager.java:304)
+
+
+**** Error file opened at 20160523 184927 Central European Summer Time Rel 3.0.2 (2009-03-29) [720.713]
+Error:  >Mon May 23 18:49:27,898<    
+RfcException: [null]
+    message: 'ashost' is missing
+    Return code: RFC_INVALID_PARAMETER(19)
+    error group: 101
+    key: RFC_ERROR_PROGRAM
+	at com.sap.conn.rfc.api.RfcOptions.checkParameters(RfcOptions.java:194)
+	at com.sap.conn.rfc.api.RfcApi.RfcOpen(RfcApi.java:75)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcClient.connect(MiddlewareJavaRfc.java:1273)
+	at com.sap.conn.jco.rt.ClientConnection.connect(ClientConnection.java:661)
+	at com.sap.conn.jco.rt.PoolingFactory.init(PoolingFactory.java:103)
+	at com.sap.conn.jco.rt.ConnectionManager.createFactory(ConnectionManager.java:171)
+	at com.sap.conn.jco.rt.DefaultConnectionManager.createFactory(DefaultConnectionManager.java:44)
+	at com.sap.conn.jco.rt.ConnectionManager.getFactory(ConnectionManager.java:160)
+	at com.sap.conn.jco.rt.RfcDestination.initialize(RfcDestination.java:789)
+	at com.sap.conn.jco.rt.RfcDestination.getAttributes(RfcDestination.java:637)
+	at com.sap.conn.jco.rt.RfcDestination.getAttributes(RfcDestination.java:26)
+	at application.ConnectionManager.step1Connect(ConnectionManager.java:75)
+	at application.ConnectionManager.main(ConnectionManager.java:304)
+
+
+**** Error file opened at 20160523 185329 Central European Summer Time Rel 3.0.2 (2009-03-29) [720.713]
+Error:  >Mon May 23 18:53:29,752<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=hhn.sap SYSNR=19 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host DESKTOP-L0MMB0V with Unicode
+ERROR       partner 'hhn.sap:3319' not reached
+TIME        Mon May 23 18:53:29 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3283
+DETAIL      NiPConnect2: 131.159.9.153:3319
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20160523 185543 Central European Summer Time Rel 3.0.2 (2009-03-29) [720.713]
+Error:  >Mon May 23 18:55:43,882<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=131.159.9.153 SYSNR=19 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host DESKTOP-L0MMB0V with Unicode
+ERROR       partner '131.159.9.153:3319' not reached
+TIME        Mon May 23 18:55:43 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3283
+DETAIL      NiPConnect2: 131.159.9.153:3319
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
