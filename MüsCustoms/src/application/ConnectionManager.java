@@ -25,11 +25,11 @@ public class ConnectionManager
     static
     {
         Properties connectProperties = new Properties();
-        connectProperties.setProperty(DestinationDataProvider.JCO_ASHOST, "hhn.sap");
+        connectProperties.setProperty(DestinationDataProvider.JCO_ASHOST, "131.159.9.153");
         connectProperties.setProperty(DestinationDataProvider.JCO_SYSNR,  "19");
         connectProperties.setProperty(DestinationDataProvider.JCO_CLIENT, "904");
         connectProperties.setProperty(DestinationDataProvider.JCO_USER,   "MGRZENDA");
-        connectProperties.setProperty(DestinationDataProvider.JCO_PASSWD, "1M3I5k7e");
+        connectProperties.setProperty(DestinationDataProvider.JCO_PASSWD, "!m§i%K/E");
         connectProperties.setProperty(DestinationDataProvider.JCO_LANG,   "DE");
         createDataFile(ABAP_AS, "jcoDestination", connectProperties);
 //
@@ -303,9 +303,9 @@ public class ConnectionManager
     public static void main(String[] args) throws JCoException
     {
         step1Connect();
-        step2ConnectUsingPool();
-        step3SimpleCall();
-        step4WorkWithTable();
-        step4SimpleStatefulCalls();
+//        step2ConnectUsingPool();
+//        step3SimpleCall();
+//        step4WorkWithTable();
+//        step4SimpleStatefulCalls();
     }
 }

@@ -22,8 +22,8 @@
          <children>
             <AnchorPane prefHeight="169.0" prefWidth="500.0" GridPane.rowIndex="1">
                <children>
-                  <TextField layoutX="50.0" layoutY="45.0" maxHeight="40.0" minHeight="25.0" promptText="Enter your username" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="45.0" />
-                  <PasswordField id=" PasswordBox" maxHeight="40.0" maxWidth="4.0" minHeight="25.0" prefHeight="25.0" prefWidth="4.0" promptText="Enter your password" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="132.0" GridPane.rowIndex="1" />
+                  <TextField fx:id="userName" layoutX="50.0" layoutY="45.0" maxHeight="40.0" minHeight="25.0" promptText="Enter your username" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="45.0" />
+                  <PasswordField fx:id="password" maxHeight="40.0" maxWidth="4.0" minHeight="25.0" prefHeight="25.0" prefWidth="4.0" promptText="Enter your password" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="132.0" GridPane.rowIndex="1" />
                </children>
             </AnchorPane>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">

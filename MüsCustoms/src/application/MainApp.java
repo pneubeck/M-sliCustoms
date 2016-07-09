@@ -16,10 +16,12 @@ public class MainApp extends Application {
 			final FXMLLoader guiLoader = new FXMLLoader(getClass().getResource("LoginScreen.fxml"));
 			AnchorPane root = guiLoader.load();
 			Scene scene = new Scene(root,520,500);
-			primaryStage.setTitle("Order your custom MÃœSLI");
+			primaryStage.setTitle("Order your custom MÜSLI");
 			primaryStage.setScene(scene);
 			primaryStage.show();
 			LoginController controller = (LoginController)guiLoader.getController();
+			Order order = new Order();
+			controller.setOrder(order);
 			controller.start();
 			
 		} catch(Exception e) {

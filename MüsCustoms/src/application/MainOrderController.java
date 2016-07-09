@@ -1,6 +1,5 @@
 package application;
 
-import java.awt.Checkbox;
 import java.io.IOException;
 
 import javax.swing.JOptionPane;
@@ -9,6 +8,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Accordion;
 import javafx.scene.control.Button;
+import javafx.scene.control.CheckBox;
 import javafx.scene.layout.GridPane;
 
 public class MainOrderController {
@@ -23,9 +23,11 @@ public class MainOrderController {
 	private Button amountContinueButton,addChooserButton;
 	
 	@FXML
-	private javafx.scene.control.CheckBox schokoStrÃ¤uselCheck,cookiesCheck,zartbitterSplitterCHeck,walnussCheck,haselnussCheck;
+	private CheckBox  schokoStrauselCheck,cookiesCheck,zartbitterSplitterCHeck,walnussCheck,haselnussCheck;
 	
 	private int gridCounter;
+	
+	private Order order;
 	
 	public void initialize(){
 		accordion.setExpandedPane(accordion.getPanes().get(0));
@@ -34,6 +36,7 @@ public class MainOrderController {
 	}
 	 
 	public void amountContinueButton(){
+		System.out.println("from main: "+order.getUserName());
 		accordion.setExpandedPane(accordion.getPanes().get(1));
 	}
 	
@@ -44,8 +47,8 @@ public class MainOrderController {
 				"cerealChooser.fxml"));
 		try {
 			if(gridCounter>=5){
-				JOptionPane.showMessageDialog(null, "Sie kÃ¶nnen keine Sorten mehr hinzufÃ¼gen.", 
-						"Fehler beim hinzufÃ¼gen einer neuen Sorte", JOptionPane.OK_CANCEL_OPTION);
+				JOptionPane.showMessageDialog(null, "Sie können keine Sorten mehr hinzufügen.", 
+						"Fehler beim hinzufügen einer neuen Sorte", JOptionPane.OK_CANCEL_OPTION);
 			}else{
 				if(gridCounter < 2){
 					row = 0;
@@ -60,5 +63,13 @@ public class MainOrderController {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+
+	public Order getOrder() {
+		return order;
+	}
+
+	public void setOrder(Order order) {
+		this.order = order;
 	}
 }

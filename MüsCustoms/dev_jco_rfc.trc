@@ -180,3 +180,324 @@ COUNTER     2
     Return code: RFC_FAILURE(1)
     error group: 102
     key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20160621 170609 Central European Summer Time Rel 3.0.2 (2009-03-29) [720.713]
+Error:  >Tue Jun 21 17:06:09,470<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=131.159.9.153 SYSNR=19 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host DESKTOP-QJ2U3DO with Unicode
+ERROR       partner '131.159.9.153:3319' not reached
+TIME        Tue Jun 21 17:06:09 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3283
+DETAIL      NiPConnect2: 131.159.9.153:3319
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20160621 171214 Central European Summer Time Rel 3.0.2 (2009-03-29) [720.713]
+Error:  >Tue Jun 21 17:12:14,559<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=hhn.sap SYSNR=19 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host DESKTOP-QJ2U3DO with Unicode
+ERROR       partner 'hhn.sap:3319' not reached
+TIME        Tue Jun 21 17:12:14 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3283
+DETAIL      NiPConnect2: 80.156.86.78:3319
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20160621 171448 Central European Summer Time Rel 3.0.2 (2009-03-29) [720.713]
+Error:  >Tue Jun 21 17:14:48,596<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=i19lp1 SYSNR=19 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host DESKTOP-QJ2U3DO with Unicode
+ERROR       hostname 'i19lp1' unknown
+TIME        Tue Jun 21 17:14:48 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      ninti.c
+LINE        897
+DETAIL      NiPGetHostByName: 'i19lp1' not found
+SYSTEM CALL getaddrinfo
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20160621 171532 Central European Summer Time Rel 3.0.2 (2009-03-29) [720.713]
+Error:  >Tue Jun 21 17:15:32,207<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=i19Ip1 SYSNR=19 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host DESKTOP-QJ2U3DO with Unicode
+ERROR       hostname 'i19Ip1' unknown
+TIME        Tue Jun 21 17:15:32 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -2
+MODULE      ninti.c
+LINE        897
+DETAIL      NiPGetHostByName: 'i19Ip1' not found
+SYSTEM CALL getaddrinfo
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20160621 171616 Central European Summer Time Rel 3.0.2 (2009-03-29) [720.713]
+Error:  >Tue Jun 21 17:16:16,414<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=131.159.9.153 SYSNR=19 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host DESKTOP-QJ2U3DO with Unicode
+ERROR       partner '131.159.9.153:3319' not reached
+TIME        Tue Jun 21 17:16:16 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3283
+DETAIL      NiPConnect2: 131.159.9.153:3319
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20160621 171737 Central European Summer Time Rel 3.0.2 (2009-03-29) [720.713]
+Error:  >Tue Jun 21 17:17:37,925<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=131.159.9.153 SYSNR=19 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host DESKTOP-QJ2U3DO with Unicode
+ERROR       partner '131.159.9.153:3319' not reached
+TIME        Tue Jun 21 17:17:37 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3283
+DETAIL      NiPConnect2: 131.159.9.153:3319
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20160621 171811 Central European Summer Time Rel 3.0.2 (2009-03-29) [720.713]
+Error:  >Tue Jun 21 17:18:11,377<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=131.159.9.153 SYSNR=00 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host DESKTOP-QJ2U3DO with Unicode
+ERROR       partner '131.159.9.153:3300' not reached
+TIME        Tue Jun 21 17:18:11 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3283
+DETAIL      NiPConnect2: 131.159.9.153:3300
+SYSTEM CALL connect
+ERRNO       10061
+ERRNO TEXT  WSAECONNREFUSED: Connection refused
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20160621 172550 Central European Summer Time Rel 3.0.2 (2009-03-29) [720.713]
+Error:  >Tue Jun 21 17:25:50,219<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=131.159.9.153 SYSNR=99 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host DESKTOP-QJ2U3DO with Unicode
+ERROR       partner '131.159.9.153:3399' not reached
+TIME        Tue Jun 21 17:25:50 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3283
+DETAIL      NiPConnect2: 131.159.9.153:3399
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20160621 173507 Central European Summer Time Rel 3.0.2 (2009-03-29) [720.713]
+Error:  >Tue Jun 21 17:35:07,912<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=131.159.9.153 SYSNR=19 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host DESKTOP-QJ2U3DO with Unicode
+ERROR       partner '131.159.9.153:3319' not reached
+TIME        Tue Jun 21 17:35:07 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3283
+DETAIL      NiPConnect2: 131.159.9.153:3319
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20160621 174827 Central European Summer Time Rel 3.0.2 (2009-03-29) [720.713]
+Error:  >Tue Jun 21 17:48:27,982<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=131.159.9.153 SYSNR=19 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host DESKTOP-QJ2U3DO with Unicode
+ERROR       partner '131.159.9.153:3319' not reached
+TIME        Tue Jun 21 17:48:27 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3283
+DETAIL      NiPConnect2: 131.159.9.153:3319
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20160621 174827 Central European Summer Time Rel 3.0.2 (2009-03-29) [720.713]
+Error:  >Tue Jun 21 17:48:27,983<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=131.159.9.153 SYSNR=19 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host DESKTOP-QJ2U3DO with Unicode
+ERROR       partner '131.159.9.153:3319' not reached
+TIME        Tue Jun 21 17:48:27 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3283
+DETAIL      NiPConnect2: 131.159.9.153:3319
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20160709 182409 Central European Summer Time Rel 3.0.2 (2009-03-29) [720.713]
+Error:  >Sat Jul 09 18:24:09,255<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=131.159.9.153 SYSNR=19 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host DESKTOP-QJ2U3DO with Unicode
+ERROR       partner '131.159.9.153:3319' not reached
+TIME        Sat Jul 09 18:24:09 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3283
+DETAIL      NiPConnect2: 131.159.9.153:3319
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20160709 182423 Central European Summer Time Rel 3.0.2 (2009-03-29) [720.713]
+Error:  >Sat Jul 09 18:24:23,698<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connection parameters: TYPE=A DEST=ABAP_AS_WITHOUT_POOL ASHOST=131.159.9.153 SYSNR=19 PCS=1
+
+LOCATION    CPIC (TCP/IP) on local host DESKTOP-QJ2U3DO with Unicode
+ERROR       partner '131.159.9.153:3319' not reached
+TIME        Sat Jul 09 18:24:23 2016
+RELEASE     720
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      nixxi.cpp
+LINE        3283
+DETAIL      NiPConnect2: 131.159.9.153:3319
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION

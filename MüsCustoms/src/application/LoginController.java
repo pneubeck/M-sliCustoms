@@ -6,6 +6,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
@@ -15,8 +17,16 @@ public class LoginController {
 	@FXML 
 	private Button loginButton;
 	
+	@FXML 
+	private TextField userName;
+	
+	@FXML 
+	private PasswordField password;
+	
 	@FXML
 	private ImageView logoView;
+	
+	private Order order; 
 	
 	public void initialize(){
 	}
@@ -35,13 +45,24 @@ public class LoginController {
 		final FXMLLoader guiLoader = new FXMLLoader(getClass().getResource("MainOrderScreen.fxml"));
 		AnchorPane root = guiLoader.load();
 		Scene scene = new Scene(root,550,550);
-		orderStage.setTitle("Order your custom MÃœSLI");
+		orderStage.setTitle("Order your custom MÜSLI");
 		orderStage.setScene(scene);
 		orderStage.show();
+		order.setUserName(userName.getText());
+		System.out.println("from login: "+order.getUserName());
 		Stage curStage = (Stage)loginButton.getScene().getWindow(); //Getting the login-Stage
 		curStage.close(); //Closing the loginStage when the login was succesful
 		MainOrderController controller = (MainOrderController)guiLoader.getController(); //Loading the Controller for the OrderStage
+		controller.setOrder(order);
 		//-----------------------------------------------------------------------------------------------------------------------------
+	}
+
+	public Order getOrder() {
+		return order;
+	}
+
+	public void setOrder(Order order) {
+		this.order = order;
 	}
 
 }
