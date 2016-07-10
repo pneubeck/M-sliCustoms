@@ -8,9 +8,9 @@
 
 <AnchorPane maxHeight="800.0" maxWidth="221.0" minHeight="139.0" minWidth="150.0" prefHeight="139.0" prefWidth="221.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.CerealChooser">
    <children>
-      <ComboBox layoutX="8.0" layoutY="14.0" prefHeight="25.0" prefWidth="126.0" promptText="Cereal" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="14.0" />
+      <ComboBox fx:id="cerealTypeCb" layoutX="8.0" layoutY="14.0" prefHeight="25.0" prefWidth="126.0" promptText="Cereal" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="14.0" />
       <Slider fx:id="amountSlider" blockIncrement="100.0" layoutX="14.0" layoutY="46.0" majorTickUnit="100.0" max="2000.0" min="100.0" minorTickCount="0" onMouseReleased="#sliderMoved" orientation="VERTICAL" prefHeight="89.0" prefWidth="48.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="100.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="46.0" />
       <Label layoutX="75.0" layoutY="70.0" text="Gramm" AnchorPane.leftAnchor="110.0" AnchorPane.topAnchor="70.0" />
-      <TextField fx:id="amountTField" layoutX="71.0" layoutY="100.0" onAction="#textfieldChanged" prefHeight="25.0" prefWidth="65.0" AnchorPane.leftAnchor="110.0" AnchorPane.topAnchor="100.0" />
+      <TextField fx:id="amountTField" layoutX="71.0" layoutY="100.0" prefHeight="25.0" prefWidth="65.0" AnchorPane.leftAnchor="110.0" AnchorPane.topAnchor="100.0" />
    </children>
 </AnchorPane>
