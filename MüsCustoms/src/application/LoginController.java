@@ -1,7 +1,6 @@
 package application;
 
 import java.io.IOException;
-
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -36,11 +35,6 @@ public class LoginController {
 	}
 	
 	public void login() throws IOException{
-		//login logic goes here----------------
-		
-		//-------------------------------------
-		
-		//loading the MainOrderScreen and disposing the loginScreen--------------------------------------------------------------------
 		Stage orderStage = new Stage();
 		final FXMLLoader guiLoader = new FXMLLoader(getClass().getResource("MainOrderScreen.fxml"));
 		AnchorPane root = guiLoader.load();
@@ -49,12 +43,10 @@ public class LoginController {
 		orderStage.setScene(scene);
 		orderStage.show();
 		order.setUserName(userName.getText());
-//		System.out.println("from login: "+order.getUserName());
 		Stage curStage = (Stage)loginButton.getScene().getWindow(); //Getting the login-Stage
 		curStage.close(); //Closing the loginStage when the login was succesful
 		MainOrderController controller = (MainOrderController)guiLoader.getController(); //Loading the Controller for the OrderStage
 		controller.setOrder(order);
-		//-----------------------------------------------------------------------------------------------------------------------------
 	}
 
 	public Order getOrder() {
@@ -64,5 +56,4 @@ public class LoginController {
 	public void setOrder(Order order) {
 		this.order = order;
 	}
-
 }

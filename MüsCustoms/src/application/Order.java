@@ -50,7 +50,7 @@ public class Order {
 	public void setToppings(ArrayList<String> toppings) {
 		this.toppings = toppings;
 	}
-	
+
 	public HashMap<String, Double> getProposedCerealAmount() {
 		return proposedCerealAmount;
 	}
@@ -58,18 +58,21 @@ public class Order {
 	public void setProposedCerealAmount(HashMap<String, Double> proposedCerealAmount) {
 		this.proposedCerealAmount = proposedCerealAmount;
 	}
+	
 	public void fillMap(String cerealType, Double cerealAmount) {
 		this.cerealAmount.put(cerealType, cerealAmount);
 	}
+	
 	public void fillProposedMap(String cerealType, Double cerealAmount) {
 		this.proposedCerealAmount.put(cerealType, cerealAmount);
 	}
+	
 	public void fillList(String topping) {
 		this.toppings.add(topping);
 	}
+	
 	public void emptyTopping() {
 		toppings.clear();
-		
 	}
 
 	@Override
@@ -82,8 +85,4 @@ public class Order {
 	public void emptyProposedAmounts() {
 		proposedCerealAmount.clear();
 	}
-
-
-
-
 }

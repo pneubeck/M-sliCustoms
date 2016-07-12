@@ -23,7 +23,6 @@ public class CerealChooser extends AnchorPane{
 			String amount = amountTField.getText();
 			Double d = new Double(amount);
 			amountSlider.setValue(d);
-//			System.out.println("textfield changed from " + oldValue + " to " + newValue);
 		});
 		int amount = (int) amountSlider.getValue();
 		amountTField.setText(Integer.toString(amount));

@@ -14,7 +14,6 @@ public class ConsignementScreenController {
 	private ArrayList<Label> flockenSlots =  new ArrayList<Label>();
 	private ArrayList<Label> extras =  new ArrayList<Label>();
 	private ArrayList<Label> placeholders =  new ArrayList<Label>();
-
 	private Order order;
 
 	public void initialize(){
@@ -49,7 +48,6 @@ public class ConsignementScreenController {
 			flockenSlots.get(c1).setVisible(true);
 			c1++;
 		}
-//		System.out.println(order.getProposedCerealAmount());
 		if(order.getProposedCerealAmount().isEmpty()){
 			for(Double d : order.getCerealAmount().values()){
 				placeholders.get(c2).setText(d+" g");

@@ -2,20 +2,16 @@ package application;
 
 import java.io.IOException;
 import java.util.HashMap;
-
 import javax.swing.JOptionPane;
-
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Accordion;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Slider;
-import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
@@ -38,27 +34,19 @@ public class MainOrderController {
 	private CheckBox  schokoStrauselCheck,cookiesCheck,zartbitterSplitterCheck,walnussCheck,haselnussCheck;
 
 	private int gridCounter;
-
 	private Order order;
-
-	//private double remainingWeight=2000;
 
 	public void initialize(){
 		amountSlider.valueProperty().addListener((observable, oldValue, newValue) -> {
 			order.setTotalAmount((Double) newValue);
-			//			System.out.println("textfield changed from " + oldValue + " to " + newValue);
 		});
 		accordion.setExpandedPane(accordion.getPanes().get(0));
 		gridCounter = 0;
 		addChooserClick();
-		
 	}
 
 	public void amountContinueButton(){
-		//		System.out.println("from main: "+order.getUserName());
 		order.setTotalAmount(amountSlider.getValue());
-		//		System.out.println("from main: "+order.getTotalAmount());
-		//remainingWeight = order.getTotalAmount();
 		accordion.setExpandedPane(accordion.getPanes().get(1));
 	}
 
@@ -79,24 +67,14 @@ public class MainOrderController {
 				}
 				column = gridCounter-(row*2);
 				AnchorPane chooser = fxmlLoader.load();
-				////				for (Node node : chooser.getChildren()){
-				////				System.out.println(node.getClass());
-				////				if(node instanceof Slider ){
-				////					System.out.println("geilo");
-				////					((Slider) node).setMax(remainingWeight);
-				////					System.out.println(((Slider) node).getValue());
-				////				}
-				//				
-				////				System.out.println(chooser.getMax());
 				cerealGridPane.add(chooser,column,row);
 				gridCounter++;
-//				System.out.println(cerealGridPane.getChildren());
 			}
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
+
 	public void getAmounts() throws IOException{
 		order.emptyProposedAmounts();
 		order.emptyTopping();
@@ -108,20 +86,13 @@ public class MainOrderController {
 				if(node instanceof Slider ){
 					a+=((Slider) node).getValue();
 					total+=((Slider) node).getValue();
-					//					System.out.println("geilo");
-					//					((Slider) node).getValue();
-					//					System.out.println(((Slider) node).getValue());
 				}
 				if(node instanceof ComboBox ){
 					t+=""+((ComboBox<?>) node).getValue();
-					//					System.out.println("geilo");
-					//					((Slider) node).getValue();
-					//					System.out.println(((ComboBox<?>) node).getValue());
 				}
 			}
 			if(a != 0 && !t.isEmpty()) {
 				order.fillMap(t,a) ;
-//				System.out.println(a+" "+t);
 			}
 		}
 		if(schokoStrauselCheck.isSelected()) order.fillList(schokoStrauselCheck.getText());
@@ -129,19 +100,12 @@ public class MainOrderController {
 		if(zartbitterSplitterCheck.isSelected()) order.fillList(zartbitterSplitterCheck.getText());
 		if(walnussCheck.isSelected()) order.fillList(walnussCheck.getText());
 		if(haselnussCheck.isSelected()) order.fillList(haselnussCheck.getText());
-
-		
 		if(total > order.getTotalAmount()) {
-//		System.out.println(total);
-//		System.out.println(order.getTotalAmount());
-		calculateProposed(total);
+			calculateProposed(total);
 		}
 		confirm();
-
-
-//		System.out.println(order);
-
 	}
+
 	public void calculateProposed(Double total) {
 		HashMap<String, Double> hm = order.getCerealAmount();
 		Double ta = order.getTotalAmount();
@@ -152,7 +116,7 @@ public class MainOrderController {
 			order.fillProposedMap(s, (ta/100)*percentage);
 		}
 	}
-	
+
 	public void confirm() throws IOException{
 		Stage orderStage = new Stage();
 		final FXMLLoader guiLoader = new FXMLLoader(getClass().getResource("ConsignementScreen.fxml"));
@@ -161,11 +125,7 @@ public class MainOrderController {
 		orderStage.setTitle("Order your custom MÜSLI");
 		orderStage.setScene(scene);
 		orderStage.show();
-//		Stage curStage = (Stage)placeOrderBtn.getScene().getWindow(); //Getting the login-Stage
-//		curStage.close(); //Closing the loginStage when the login was succesful
 		ConsignementScreenController controller = (ConsignementScreenController)guiLoader.getController();
-		//Loading the Controller for the OrderStage
-		//System.out.println("confirm "+order.getTotalAmount());
 		controller.setOrder(order);
 		controller.fillLists();
 		controller.getData();
@@ -178,12 +138,4 @@ public class MainOrderController {
 	public void setOrder(Order order) {
 		this.order = order;
 	}
-
-	//	public double getRemainingWeight() {
-	//		return remainingWeight;
-	//	}
-	//
-	//	public void setRemainingWeight(double remainingWeight) {
-	//		this.remainingWeight = remainingWeight;
-	//	}
 }
