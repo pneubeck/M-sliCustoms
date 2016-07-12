@@ -21,6 +21,7 @@ public class MainApp extends Application {
 			primaryStage.show();
 			LoginController controller = (LoginController)guiLoader.getController();
 			Order order = new Order();
+			order.setTotalAmount((double) 500);
 			controller.setOrder(order);
 			controller.start();
 			

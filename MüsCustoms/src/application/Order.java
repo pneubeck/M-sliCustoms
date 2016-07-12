@@ -50,6 +50,14 @@ public class Order {
 	public void setToppings(ArrayList<String> toppings) {
 		this.toppings = toppings;
 	}
+	
+	public HashMap<String, Double> getProposedCerealAmount() {
+		return proposedCerealAmount;
+	}
+
+	public void setProposedCerealAmount(HashMap<String, Double> proposedCerealAmount) {
+		this.proposedCerealAmount = proposedCerealAmount;
+	}
 	public void fillMap(String cerealType, Double cerealAmount) {
 		this.cerealAmount.put(cerealType, cerealAmount);
 	}
@@ -69,6 +77,10 @@ public class Order {
 		return "Order [userName=" + userName + ", totalPrice=" + totalPrice + ", totalAmount=" + totalAmount
 				+ ", cerealAmount=" + cerealAmount + ", proposedCerealAmount=" + proposedCerealAmount + ", toppings="
 				+ toppings + "]";
+	}
+
+	public void emptyProposedAmounts() {
+		proposedCerealAmount.clear();
 	}
 
 

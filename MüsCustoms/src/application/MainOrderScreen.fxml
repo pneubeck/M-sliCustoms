@@ -67,7 +67,7 @@
                 </TitledPane>
               </panes>
             </Accordion>
-            <Button layoutX="446.0" layoutY="510.0" mnemonicParsing="false" text="Place your Order" AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="15.0" onAction="#getAmounts" />
+            <Button fx:id="placeOrderBtn" layoutX="446.0" layoutY="510.0" mnemonicParsing="false" text="Place your Order" AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="15.0" onAction="#getAmounts" />
          </children>
       </AnchorPane>
    </children>

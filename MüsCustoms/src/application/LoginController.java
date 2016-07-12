@@ -49,7 +49,7 @@ public class LoginController {
 		orderStage.setScene(scene);
 		orderStage.show();
 		order.setUserName(userName.getText());
-		System.out.println("from login: "+order.getUserName());
+//		System.out.println("from login: "+order.getUserName());
 		Stage curStage = (Stage)loginButton.getScene().getWindow(); //Getting the login-Stage
 		curStage.close(); //Closing the loginStage when the login was succesful
 		MainOrderController controller = (MainOrderController)guiLoader.getController(); //Loading the Controller for the OrderStage
