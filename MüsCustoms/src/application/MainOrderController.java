@@ -25,7 +25,7 @@ public class MainOrderController {
 	private GridPane cerealGridPane;
 
 	@FXML
-	private Button amountContinueButton,addChooserButton,placeOrderBtn;
+	private Button amountContinueButton,addChooserButton,placeOrderBtn, continueBtn;
 
 	@FXML
 	private Slider amountSlider;
@@ -49,6 +49,10 @@ public class MainOrderController {
 		order.setTotalAmount(amountSlider.getValue());
 		accordion.setExpandedPane(accordion.getPanes().get(1));
 	}
+	
+	public void continueButton(){
+		accordion.setExpandedPane(accordion.getPanes().get(2));
+	}
 
 	public void addChooserClick(){
 		int row = 0;
@@ -57,8 +61,8 @@ public class MainOrderController {
 				"cerealChooser.fxml"));
 		try {
 			if(gridCounter>=4){
-				JOptionPane.showMessageDialog(null, "Sie können keine Sorten mehr hinzufügen.", 
-						"Fehler beim hinzufügen einer neuen Sorte", JOptionPane.OK_CANCEL_OPTION);
+				JOptionPane.showMessageDialog(null, "You cannot add more types of Müsli.", 
+						"Error", JOptionPane.OK_CANCEL_OPTION);
 			}else{
 				if(gridCounter < 2){
 					row = 0;

@@ -27,12 +27,12 @@ public class CerealChooser extends AnchorPane{
 		int amount = (int) amountSlider.getValue();
 		amountTField.setText(Integer.toString(amount));
 		cerealTypeCb.getItems().addAll(
-				"Flocken 1",
-				"Flocken 2",
-				"Flocken 3",
-				"Flocken 4",
-				"Flocken 5",
-				"Flocken 6"
+				"Rye flakes",
+				"Oat flakes",
+				"Barley flakes",
+				"Wheat flakes",
+				"Spelt flakes",
+				"Soya flakes"
 				);
 
 	}
